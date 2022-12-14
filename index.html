@@ -15,20 +15,22 @@
 					<div class="logo">
 						<a href="#"><img src="images/logo.png"></a>
 					</div>
-					<div class="navigation_bar" id="navbar">
+					<div class="navigation_bar" id="navigation_bar">
 						<div class="burger" onclick="toggleMobileMenu()">
-					      <div class="burger__bar"></div>
-					      <div class="burger__bar"></div> 
-					      <div class="burger__bar"></div>
-					    </div>
-						<a class="a_1" href="#main_4_catalog">Каталог</a>
-						<a class="a_2" href="#main_2">Про нас</a>
-						<a class="a_3" href="#">Збери букет</a>
-						<a class="a_4" href="#footer_info">Контакти</a>
-					</div>
-					<div class="basket_search">
-						<a href=""><img src="images/basket.png"></a>
-						<a href=""><img src="images/lupa.png"></a>
+					    <div class="burger__bar"></div>
+					  </div>
+					  <div class="navbar_desk">
+						  <div class="navbar_links">
+								<a class="a_1" href="#main_4_catalog">Каталог</a>
+								<a class="a_2" href="#main_2">Про нас</a>
+								<a class="a_3" href="#">Збери букет</a>
+								<a class="a_4" href="#footer_info">Контакти</a>
+							</div>
+							<!-- <div class="basket_search">
+								<a href=""><img src="images/basket.png"></a>
+								<a href=""><img src="images/lupa.png"></a>
+							</div> -->
+						</div>
 					</div>
 				</div>
 			</nav>
@@ -38,7 +40,7 @@
 				<article class="article_title">
 					<h1>Букет із кущових троянд 
 					<br>"Довгоочікуване щастя"</h1>
-					<p>Ніжний та витончений шик у букеті з троянд - <br>гарний вибір для коханої <br>людини</p>
+					<p>Ніжний та витончений шик у букеті з троянд - гарний вибір для коханої людини</p>
 				</article>
 				<div>
 					<img class="img_title" src="images/bg_web-no-background.png">
@@ -59,7 +61,7 @@
 					<button>"Свій" букет</button>
 				</div>
 			</section>
-			<section class="main_2">
+			<section class="main_2" id="main_2">
 				<article class="article_intro">
 					<h2>Про нас</h2>
 					<p>Яких квітів тут лише немає! І садові, і польові, і кімнатні у глиняних горщиках. Очі розбігаються від такого достатку.</p>
@@ -141,9 +143,14 @@
 			<section class="main_5">
 				<h2>Відгуки</h2>
 				<div class="responses">
-					
-				
-					
+					<figure class="response_1">
+						<h5>Володимир</h5>
+						<p>"Сам не фахівець з квітів, але дружині дуже сподобався оригінальний весняний букет, зібраний із позитивним настроєм. Залишаю свій позитивний відгук магазину на вул. Добровольчих батальонів."</p>
+					</figure>
+					<figure class="response_2">
+						<h5>Людмила</h5>
+						<p>"Замовляла квіти у неробочий час (увечері), але зі мною дуже оперативно зв'язався співробітник та пообіцяв доставити букет вранці у призначений час. Так і сталося, квіти були доставлені з точністю секунда в секунду, свіжі та красиві. Рекомендую."</p>
+					</figure>
 				</div>
 				<form class="form_response">
 					<h3>Додати відгук</h3>
@@ -179,6 +186,12 @@
 					<a href="">Кімнатні рослини</a>
 				</article>
 			</div>
+			<div class="footer_mob">
+				<p>Copyright &#169 2022</p>
+				<div>
+					<img src="images/logo.png">
+				</div>
+			</div>
 		</footer>
 	</div>
 	<script>
@@ -197,7 +210,7 @@
 	});
 	</script>
 	<script type="text/javascript">
-    const nav = document.getElementById('navbar'); 
+    const nav = document.getElementById('navigation_bar'); 
 
     function toggleMobileMenu() {
       nav.classList.toggle('open');
