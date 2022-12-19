@@ -278,7 +278,7 @@ h2 {
 	margin: 0;
 }
 
-.main_4_catalog {
+.content {
 	display: grid;
 	grid-template-columns: repeat(3, 32%);
 	grid-gap: 25px;
@@ -286,23 +286,23 @@ h2 {
   align-items: center;  
 }
 
-.main_4_catalog article {
+.card {
 	-webkit-box-shadow: 0px 8px 11px 0px #FFCEDF; 
 	box-shadow: 0px 8px 11px 0px #FFCEDF;
 }
 
-.main_4_catalog article:hover {
+.card:hover {
 	-webkit-box-shadow: 0px 10px 13px -7px #00000096, 50px 35px 50px 13px rgba(212,212,212,0); 
 	box-shadow: 0px 10px 13px -7px #00000096, 50px 35px 50px 13px rgba(212,212,212,0);
 	transform: scale(1.05);
 	transition: 0.6s;
 }
 
-.main_4_catalog img {
+.content img {
 	width: 100%;
 }
 
-.main_4_catalog p {
+.content p {
 	text-align: center;
 	font-size: 1.5rem;
 	font-weight: 300;
