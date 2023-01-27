@@ -1,3 +1,27 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDaXR-183ZtpZB5VNHuI51qXLOeip1OiOY",
+  authDomain: "flower-shop-47691.firebaseapp.com",
+  projectId: "flower-shop-47691",
+  storageBucket: "flower-shop-47691.appspot.com",
+  messagingSenderId: "744347452166",
+  appId: "1:744347452166:web:964abdb25233ef28c8d487",
+  measurementId: "G-QX9NTX5JLC"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
+
 function createContentTemplate(flower) {
   const article = 
    `<article class="card" id="content">
